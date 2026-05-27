@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 18:02:45 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/05/27 19:21:48 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 // # include 
 // # include
 
-int	isalpha(int c);
-int	isdigit(int c);
-int	isalnum(int c);
-int	isascii(int c);
-int	isprint(int c);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
 
 #endif
