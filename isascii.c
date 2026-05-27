@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 17:47:57 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 17:48:49 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:55:53 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,3 +14,15 @@ int	isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	int		n;
+// 	//char	c;
+
+// 	n = 128;
+// 	printf("%d", isascii(n));
+// 	return (0);
+// }

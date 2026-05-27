@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   isprint.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/27 18:02:45 by lucferre         ###   ########.fr       */
+/*   Created: 2026/05/27 17:56:34 by lucferre          #+#    #+#             */
+/*   Updated: 2026/05/27 18:02:24 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+int	isprint(int c)
+{
+	return (c >= 32 && c <= 126);
+}
 
-// # include 
-// # include
+// #include <stdio.h>
 
-int	isalpha(int c);
-int	isdigit(int c);
-int	isalnum(int c);
-int	isascii(int c);
-int	isprint(int c);
+// int	main(void)
+// {
+// 	char	c;
 
-#endif
+// 	c = '\n';
+// 	printf("%d", isprint(c));
+// 	return (0);
+// }
