@@ -20,6 +20,10 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_memset(*s, c, n)__ - fills the first _n_ bytes of the memory area pointed to by _s_ with the constant byte _c_, and returns a pointer to the memory area _s_.
 
+* __ft_bzero(*s, n)__ - erases the data in the _n_ bytes of the memory starting at the location pointed to by _s_, by writing zeros (bytes containing '\0') to that area.
+
+* __ft_memcpy(*dest, *src, n)__ - copies _n_ bytes from memory area _src_ to memory area _dest_. The memory areas must not overlap.
+
 ## Instructions
 
 Command lines:
