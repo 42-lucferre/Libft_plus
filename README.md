@@ -26,6 +26,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_memmove(*dest, *src, n)__ - copies _n_ bytes from memory area _src_ to memory area _dest_. The memory areas may overlap: copying takes place as though the bytes in _src_ are first copied into a temporary  array  that  does  not overlap _src_ or _dest_, and the bytes are then copied from the temporary array to _dest_.
 
+* __ft_strlcpy(*dst, *src, dsize)__ - copy the input string into a destination  string. If the destination buffer, limited by its size, isn't large enough to hold the copy, the resulting string is  truncated (but it is guaranteed to be null-terminated). They return the length of the total string they tried to create.
+
 ## Instructions
 
 Command lines:
