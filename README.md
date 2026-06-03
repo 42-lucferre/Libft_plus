@@ -38,6 +38,14 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_strrchr(*s, c)__ - returns  a pointer to the last occurrence of the character _c_ in the string _s_, or NULL if the character is not found. The terminating null byte is considered part of the string, so that if _c_ is specified as '\0', this function return a pointer to the terminator.
 
+* __ft_strncmp(*s1, *s2, n)__ - compares the two strings _s1_ and _s2_. It compares only the first (at most) _n_ bytes, using unsigned characters. Returns an integer indicating the result of the comparison, as follows:
+  
+       •  0, if the s1 and s2 are equal;
+
+       •  a negative value if s1 is less than s2;
+
+       •  a positive value if s1 is greater than s2.
+
 ## Instructions
 
 Command lines:
