@@ -46,6 +46,8 @@ Functions added to the library (descriptions from "man"):
 
        •  a positive value if s1 is greater than s2.
 
+* __ft_memchr(*s, c, n)__ - scans the initial _n_ bytes of the memory area pointed to by _s_ for the first instance of _c_. Both _c_ and the bytes of the memory area pointed to by _s_ are interpreted as unsigned char.
+
 ## Instructions
 
 Command lines:
