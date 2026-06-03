@@ -30,7 +30,11 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_strlcat(*dst, *src, dsize)__ - catenate the input string into a destination  string. If the destination buffer, limited by its size, isn't large enough to hold the copy, the resulting string is  truncated (but it is guaranteed to be null-terminated). They return the length of the total string they tried to create. If _dsize_ isn't longer than the original _dst_ string, this function returns _dstsize_ + (size of _src_).
 
-* __ft_toupper(c)__ - If _c_ is a lowercase letter, returns its uppercase equivalent, if an uppercase representation exists in the current locale. Otherwise, it returns _c_.
+* __ft_toupper(c)__ - if _c_ is a lowercase letter, returns its uppercase equivalent, if an uppercase representation exists in the current locale. Otherwise, it returns _c_.
+
+* __ft_tolower(c)__ - if _c_ is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in the current locale. Otherwise, it returns _c_.
+
+* __ft_strchr(*s, c)__ - returns  a pointer to the first occurrence of the character _c_ in the string _s_.
 
 ## Instructions
 
