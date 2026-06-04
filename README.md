@@ -56,6 +56,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_calloc( nmemb, size)__ - allocates memory for an array of _nmemb_ elements of _size_ bytes each and returns a pointer to the allocated memory.  The memory is set to zero.  If _nmemb_ or _size_ is 0, then it returns a unique pointer value that can later be successfully passed to free().
 
+* __ft_strdup(*s)__ - returns a pointer to a new string which is a duplicate of the string _s_. Memory for the new string is obtained with malloc(), and can be freed with free(). On success, the function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available.
+
 ## Instructions
 
 Command lines:
