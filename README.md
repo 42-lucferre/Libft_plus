@@ -54,6 +54,8 @@ Functions added to the library (descriptions from "man"):
 
 * __ft_atoi( *nptr)__ - converts the initial portion of the string pointed to by _nptr_ to int. The string may begin with an arbitrary amount of white space ('\f', '\n', '\r', '\t', '\v' or space) followed by a single optional '+' or '-' sign.
 
+* __ft_calloc( nmemb, size)__ - allocates memory for an array of _nmemb_ elements of _size_ bytes each and returns a pointer to the allocated memory.  The memory is set to zero.  If _nmemb_ or _size_ is 0, then it returns a unique pointer value that can later be successfully passed to free().
+
 ## Instructions
 
 Command lines:
