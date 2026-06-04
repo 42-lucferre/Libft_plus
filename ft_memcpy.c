@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 18:59:35 by lucferre          #+#    #+#             */
-/*   Updated: 2026/05/28 19:38:06 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/06/04 20:51:57 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*t;
 	unsigned char	*u;
 
+	if (!dest && !src)
+		return (dest);
 	i = 0;
 	t = (unsigned char *) src;
 	u = (unsigned char *) dest;
@@ -29,6 +31,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+	//if (!dest || !src)
+
 // #include <stdio.h>
 // #include <stdlib.h>
 
@@ -38,7 +42,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	char	*d;
 
 // 	d = malloc(sizeof(char) * 10);
-// 	s = "teste";
+// 	s = NULL;
 // 	ft_memcpy(d, s, 2);
 // 	printf("%s", d);
 // 	return (0);
