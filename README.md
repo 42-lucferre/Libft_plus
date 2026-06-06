@@ -1,4 +1,4 @@
-# This project has been created as part of the 42 curriculum by lucferre
+# _This project has been created as part of the 42 curriculum by lucferre_
 
 ## Description
 
@@ -58,10 +58,13 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_strdup(*s)__ - returns a pointer to a new string which is a duplicate of the string _s_. Memory for the new string is obtained with malloc(), and can be freed with free(). On success, the function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available.
 
-* __ft_substr(*s, start, len)__ - Allocates memory (using malloc()) and returns a substring from the string _’s’_. The substring starts at index _'start’_ and has a maximum length of _’len’_
+* __ft_substr(*s, start, len)__ - allocates memory (using malloc()) and returns a substring from the string _’s’_. The substring starts at index _'start’_ and has a maximum length of _’len’_.
 
-* __ft_strjoin__: 
-  - char *ft_strjoin(char const *s1, char const *s2) - allocates memory (using malloc()) and returns a new string, which is the result of concatenating _’s1’_  and _’s2’_. 
+* __ft_strjoin__:
+  * char *ft_strjoin(char const \*s1, char const \*s2) - allocates memory (using malloc()) and returns a new string, which is the result of concatenating _’s1’_  and _’s2’_.
+
+* __ft_strtrim__:
+  * char *ft_strtrim(char const \*s1, char const \*set) - allocates memory (using malloc()) and returns a copy of _’s1’_ with characters from _’set’_ removed from the beginning and the end.
 
 ## Instructions
 
