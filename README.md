@@ -4,7 +4,7 @@
 
 This projects intends to teach the fundamentals of basics functions and libraries, and build an usable library for myself as well.
 
-Functions added to the library (descriptions from "man"):
+Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_isalpha(c)__ - checks for an alphabetic character; in the standard "C" locale, it  is  equivalent  to (isupper(c)  ||  islower(c)).
   
@@ -59,6 +59,9 @@ Functions added to the library (descriptions from "man"):
 * __ft_strdup(*s)__ - returns a pointer to a new string which is a duplicate of the string _s_. Memory for the new string is obtained with malloc(), and can be freed with free(). On success, the function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available.
 
 * __ft_substr(*s, start, len)__ - Allocates memory (using malloc()) and returns a substring from the string _’s’_. The substring starts at index _'start’_ and has a maximum length of _’len’_
+
+* __ft_strjoin__: 
+  - char *ft_strjoin(char const *s1, char const *s2) - allocates memory (using malloc()) and returns a new string, which is the result of concatenating _’s1’_  and _’s2’_. 
 
 ## Instructions
 

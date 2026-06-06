@@ -1,4 +1,5 @@
-#README.md
-*teste*
-*.o
-*.a
+*
+!*.c
+!libft.h
+!Makefile
+!README.md
