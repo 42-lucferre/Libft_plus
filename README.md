@@ -65,6 +65,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_strtrim__:
   * char *ft_strtrim(char const \*s1, char const \*set) - allocates memory (using malloc()) and returns a copy of _’s1’_ with characters from _’set’_ removed from the beginning and the end.
+  
+* __ft_split__:
+  * char **ft_split(char const *s, char c) - allocates memory (using malloc()) and returns an array of strings obtained by splitting _’s’_ using the character _’c’_ as a delimiter. The array must end with a NULL pointer.
 
 ## Instructions
 
