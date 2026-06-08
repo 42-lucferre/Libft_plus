@@ -102,8 +102,11 @@ Functions added to the library (descriptions from "man" and from Subject):
 * __ft_lstlast__:
   * t_list *ft_lstlast(t_list \*lst) - returns the last node of the list.
 
-* __ft_lstadd_back__
+* __ft_lstadd_back__:
   * void ft_lstadd_back(t_list **lst, t_list *new) - adds the node _’new’_ at the end of the list.
+
+* __ft_lstdelone__:
+  * void ft_lstdelone(t_list \*lst, void (\*del)(void*)) - takes a node as parameter and frees its content using the function _’del’_. Free the node itself but does NOT free the next node.
 
 ## Instructions
 
