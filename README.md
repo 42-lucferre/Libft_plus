@@ -89,6 +89,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_putnbr_fd__:
   * void ft_putnbr_fd(int n, int fd) - outputs the integer _’n’_ to the specified file descriptor.
+
+* __ft_lstnew__:
+  * t_list *ft_lstnew(void \*content) - allocates memory (using malloc()) and returns a new node. The _’content’_ member variable is initialized with the given parameter _’content’_. The variable _’next’_ is initialized to NULL.
   
 ## Instructions
 
