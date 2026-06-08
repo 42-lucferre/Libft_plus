@@ -92,6 +92,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 
 * __ft_lstnew__:
   * t_list *ft_lstnew(void \*content) - allocates memory (using malloc()) and returns a new node. The _’content’_ member variable is initialized with the given parameter _’content’_. The variable _’next’_ is initialized to NULL.
+
+* __ft_lstadd_front__:
+  * void ft_lstadd_front(t_list **lst, t_list *new) - Adds the node _’new’_ at the beginning of the list.
   
 ## Instructions
 
