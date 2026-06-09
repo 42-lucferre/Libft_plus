@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 19:08:04 by lucferre          #+#    #+#             */
-/*   Updated: 2026/06/09 01:22:54 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/06/09 13:18:45 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
-	int		i;
+	long	nbr;
+	char	r;
 
-	i = 0;
-	str = ft_itoa(n);
-	while (str[i] != '\0')
+	nbr = n;
+	if (nbr < 0)
 	{
-		write(fd, &str[i], 1);
-		i++;
+		nbr *= -1;
+		write(fd, "-", 1);
 	}
-	free(str);
+	if (nbr > 9)
+		ft_putnbr_fd((int)(nbr / 10), fd);
+	r = nbr % 10 + '0';
+	write(fd, &r, 1);
 }

@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 00:11:57 by lucferre          #+#    #+#             */
-/*   Updated: 2026/06/07 14:16:42 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/06/09 13:42:03 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static char	**split_fill(char const *s, char c, char **split, size_t n)
 	size_t	i;
 
 	p = 0;
-	while (n-- != 1)
+	while (n-- > 1)
 	{
 		i = 0;
 		while (*s == c)
@@ -60,7 +60,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	n = 2;
 	i = 0;
-	while (s[i] == c)
+	while (s[i] == c && s[i] != '\0')
 		i++;
 	if (i == ft_strlen(s) || *s == '\0')
 		n -= 1;
