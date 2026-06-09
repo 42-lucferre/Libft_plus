@@ -108,6 +108,9 @@ Functions added to the library (descriptions from "man" and from Subject):
 * __ft_lstdelone__:
   * void ft_lstdelone(t_list \*lst, void (\*del)(void*)) - takes a node as parameter and frees its content using the function _’del’_. Free the node itself but does NOT free the next node.
 
+* __ft_lstclear__:
+  * void ft_lstclear(t_list **lst, void (\*del)(void\*)) - deletes and frees the given node and all its successors, using the function _’del’_ and free().Finally, set the pointer to the list to NULL.
+
 ## Instructions
 
 Command lines:
