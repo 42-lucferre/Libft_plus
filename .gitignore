@@ -1,5 +1,6 @@
 *
 !*.c
+!ft_printf
 !libft.h
 !Makefile
 !README.md
