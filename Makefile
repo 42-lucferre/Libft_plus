@@ -6,7 +6,7 @@
 #    By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/11 00:25:40 by lucferre          #+#    #+#              #
-#    Updated: 2026/07/11 01:06:37 by lucferre         ###   ########.fr        #
+#    Updated: 2026/07/13 22:07:30 by lucferre         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 ft_putnbr_fd.c ft_lstnew.c ft_lstadd_front.c \
 ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
-ft_printf/formats.c ft_printf/ft_utoa.c ft_printf/ft_printf.c
+ft_printf/formats.c ft_printf/ft_utoa.c ft_printf/ft_printf.c \
+get_next_line/get_next_line_bonus.c get_next_line/get_next_line_utils_bonus.c
 OBJ = $(SRC:.c=.o)
 HEADER = libft.h
 

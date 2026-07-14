@@ -1,6 +1,7 @@
 *
 !*.c
 !ft_printf
+!get_next_line
 !libft.h
 !Makefile
 !README.md

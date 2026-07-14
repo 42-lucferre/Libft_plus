@@ -6,7 +6,7 @@
 /*   By: lucferre <lucferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:16:26 by lucferre          #+#    #+#             */
-/*   Updated: 2026/07/11 00:15:46 by lucferre         ###   ########.fr       */
+/*   Updated: 2026/07/13 22:09:16 by lucferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 4096
+# endif
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -75,5 +79,10 @@ int		f_pointer(va_list p_args);
 int		f_int(va_list p_args);
 int		f_unsigned(va_list p_args);
 int		f_hex(va_list p_args, char f);
+char	*get_next_line(int fd);
+int		line_end(char *acc);
+char	*str_join(char *acc, char *buffer);
+char	*read_line(char *acc);
+char	*extract_line(char *acc, char *line);
 
 #endif
